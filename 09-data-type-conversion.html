@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let num ="13";
+const result = num+5;
+console.log(result); //135
+
+const result1 =Number(num) + 5;
+console.log(result1);
+//Number()fonksiyonu tip cevrimi yapar rakama cevirmeye calisir. eger rakam degilse NaN hatasi verir
+const result2 =Number("ayse") + 5;
+console.log(result2);//NaN => not a number 
+
+const para = 5400;
+console.log(para+15);//5415
+console.log(String(para)+15); //540015 toplama yapmaz ekler
+//String()fonksiyonu verilen ifadeyi stringe cevirir
+
+const s1= 5;
+const s2= -7;
+const isim = "Ayse";
+console.log(Boolean(isim));//true
+console.log(Boolean(s1));//true
+console.log(Boolean(s2));//true
+//0,null, undefined , NaN ve " " Javascript tarafindan false olarak kabul edilir.
+//diger degerler Boolean'a cevrildiginde true olarak kabul edilir.
+
+const sifir = 0, nal=null;
+const tanimsiz = undefined;
+const bos="", sayiDegil = NaN
+console.log(Boolean(sifir),Boolean(nal));//false false
+console.log(Boolean(tanimsiz),Boolean(bos));//false false
+console.log(Boolean(sayiDegil));//false
+
+    </script>
+</body>
+</html>

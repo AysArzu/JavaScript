@@ -1,0 +1,80 @@
+Case sensitive dir
+satir sonuna genellikle ; konus
+identifierlar harf _ veya $ ile baslanabilir
+identifierlar camelcase ile yazilir
+
+    console.log ta kullanici birsey gormez sadece console da biz goruruz
+    console.log ("Hello world");
+    console.warn("Sayilar esit"); console'a sari yazdirir basinda unlem isareti olur
+    console.error(ID alani bos birakilamaz); kritik hata olabilecek seylerde bizim ya da 
+                   developerin dikkatini cekmek icin kullanilir kirmizi yazdirir
+
+alert=> kullaniciya bilgi vermek
+        confirm=>kullanicidan bilgi almak icin
+        prompt=> kulanicidan bilgi almak icin kullanilir
+
+<script> icine yazacaksan eger bu sekilde olur
+    // yorum satiri
+
+    /*
+     coklu yorum satiri ******** 
+     */
+
+</script>
+
+js de degisken veya sabit tanimlamak icin 3 farkli ifade kullanilir
+
+   var  =>DEGISKEN   
+    let(ES6)=>DEGISKEN 
+    const(ES6) =>SABIT
+
+
+data veri tipleri
+String var ad = "ayse";
+number var yas = 18;
+BigInf var x = 100n; ES11
+Boolean var emekli = true;
+Symbol var id= Symbol(); ES6
+Undefined var isim;
+null var isim = null;
+Object array, object
+
+
+typeof methodu degiskenin turunu ogrenmemize yardimci olan methoddur
+ 
+String var ad = "ayse";
+console.log(degisken); ==> ayse
+console.log(typeof(degisken)); ==> String yazar
+
+** var ile degisken tanimlandiginda ayni isimde baska bir degisken tanimlamasina izin verir
+
+const veya let ile degisken tanimlandiginda ayni scope icinde ayni isimde baska bir degisken tanimanmasina izin vermez.
+const degisken = "Ayse";
+console.log(degisken); //Ayse
+console.log(typeof(degisken)); //String
+
+var degisken =50;  ====>>> bu satirda hata verir
+console.log(degisken); 
+console.log(typeof(degisken));
+ 0,null, undefined , NaN ve " " Javascript tarafindan false olarak kabul edilir.
+diger degerler Boolean'a cevrildiginde true olarak kabul edilir.
+
+
+OPERATORLER
+1)Aritmetik operatorler 
+2)Karsilastirma operatorleri 
+3)Mantiksal operatorler 
+4)Atama operatorleri 
+
+
+1) Aritmetik operatorler : + - *(carpma) /(bolme) ** (ust alma) %(modulus-kalan bulma) ++(bir arttirma) --(bir azaltma)
+
+2)Karsilastirma operatorleri :== veya ===, != veya !==, < > <= >=
+karsilastirma tiplerinin sonucu herzaman true veya false tur
+
+3)Mantiksal operatorler  and(&&)  or(||) not (!)
+
+4)Atama operatorleri  = += -= *= /= **=(sayinin karesini alip atama) %=(sayinin modunu alma) &=(ve islemi) |=(veya islemi)
+
+innerText =>bir elementin icindeki yaziyi okumak veya degistirmek icinn kullanilir
+innerHTML=>Bir elementin icindeki HTML i okumak veya degistirmek icin kullanilir
