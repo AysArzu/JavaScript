@@ -78,3 +78,8 @@ karsilastirma tiplerinin sonucu herzaman true veya false tur
 
 innerText =>bir elementin icindeki yaziyi okumak veya degistirmek icinn kullanilir
 innerHTML=>Bir elementin icindeki HTML i okumak veya degistirmek icin kullanilir
+classList=> bir elementin sahip oldugu class lari manipule etmek icin kullanilir
+   add => elemente class eklemek icin
+   remove => elementin sahip oldugu class i kaldirmak icin kullanilir
+
+value => bir form elemaninin degerini okumak yada degistirmek icin kullanilir   

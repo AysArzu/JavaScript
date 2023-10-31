@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> </style>
+</head>
+<body>
+<input type="text" id="txtName" value="Ayse Hanim"/>
+<button onclick="sayHello()">Say Hello</button>
+<h3 id="lblMessage">...</h3> 
+
+<script>
+const txtName= document.querySelector("#txtName");
+const lblMesaj=document.querySelector("#lblMessage");
+//txtName.value="Ebrar Azra"; diyerek txtName'in valuesini degistiririz
+//txtName="ebrar" dersek degistirmez console da kizar
+function sayHello() {
+  lblMesaj.innerText= `Merhaba ${txtName.value}`; //yolunu aliriz 
+}
+</script>
+    
+</body>
+</html>
