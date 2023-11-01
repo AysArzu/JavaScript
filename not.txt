@@ -1,5 +1,5 @@
 Case sensitive dir
-satir sonuna genellikle ; konus
+satir sonuna genellikle ; konur
 identifierlar harf _ veya $ ile baslanabilir
 identifierlar camelcase ile yazilir
 
@@ -83,3 +83,38 @@ classList=> bir elementin sahip oldugu class lari manipule etmek icin kullanilir
    remove => elementin sahip oldugu class i kaldirmak icin kullanilir
 
 value => bir form elemaninin degerini okumak yada degistirmek icin kullanilir   
+
+OPTIONAL CHAINING
+***Object yapilarinda object in olayan elemanlarina erisim saglandiginda hata almamak icin kullanilir!!! 
+
+  const user={
+    name :'John,
+    age:23
+  }
+console.log(user?.salary);
+bu ? sayesinde hata firlatmasi ve kodun durmasi engellenir.
+
+NULLISH COALIESCING
+Sadece NULL ve undefined durumlarini kontrol ederek buna gore aksiyon almamizi saglayan bir operatordur.
+Eger ilk parametre null veya undefined degilse ilk parametreyi, yoksa ikinci parametreyi dondurur. 
+const user;
+alert(user ?? "Anonymous"); => nullish coalescing
+ 
+ const user;
+ alert(user !== null && user !== undefined ? user : "Anonymous"); => classic ternary
+DONGULER
+Tekrarlanan islemleri daha az kod yazarak gerceklestirmek icin donguler kullanilir.
+  *for   
+  *while    
+  *do-while   donguleri vardir.
+
+FONKSIYON NEDIR?
+Programda tekrarli calistirilabilecek alt programlara denir.
+*kod tekrarinin onune gecer (DRY).
+*problemler kucuk parcalara ayrilarak daha kolay cozulur.
+*parcalara ayrilan sorun daha fazla insan tarafindan ayni anda cozulur.
+*hata ayiklamak daha kolay olur.
+
+
+
+
