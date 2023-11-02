@@ -12,13 +12,11 @@
     <script>
       function handleCalculateClick() {
         const num = document.querySelector("#txtNumber").value;
-       
+
         const result = calculateFactorial(num);
-       document.querySelector("#result").innerHTML = `${num}! = ${result}`;
-       
+        document.querySelector("#result").innerHTML = `${num}! = ${result}`;
       }
       function calculateFactorial(val) {
-       
         let num = isNaN(val + 1) ? 0 : Number(val);
         num = num === 0 ? 1 : num;
         let factorial = 1;
@@ -26,9 +24,9 @@
           factorial *= num;
           num--;
         } while (num > 1);
-   return factorial;
+        return factorial;
       }
-      alert(calculateFactorial(10))
+      alert(calculateFactorial(10));
     </script>
   </body>
 </html>

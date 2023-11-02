@@ -115,6 +115,9 @@ Programda tekrarli calistirilabilecek alt programlara denir.
 *parcalara ayrilan sorun daha fazla insan tarafindan ayni anda cozulur.
 *hata ayiklamak daha kolay olur.
 
-
-
+SCOPE
+Function scope: fonksiyonlarin icinde tanimlanan degiskenler sadece fonksiyon icinde gecerlidir.
+Global scope:Her yerden erisilebilen degiskenler en tepede tanimlanir.
+Block scope: Sadece tanimlandigi blok icinde(if,for, while...) gecerlidir.
+var icin block scope yok Function ve Global scope var. onlar sadece let ve const icin gecerli.
 
