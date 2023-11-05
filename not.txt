@@ -118,6 +118,19 @@ Programda tekrarli calistirilabilecek alt programlara denir.
 SCOPE
 Function scope: fonksiyonlarin icinde tanimlanan degiskenler sadece fonksiyon icinde gecerlidir.
 Global scope:Her yerden erisilebilen degiskenler en tepede tanimlanir.
-Block scope: Sadece tanimlandigi blok icinde(if,for, while...) gecerlidir.
+Block scope: Sadece tanimlandigi blok icinde(if,for, while...) gecerlidir.ES6
 var icin block scope yok Function ve Global scope var. onlar sadece let ve const icin gecerli.
+degiskene hicbir tanimlama yapmazsak o degiskeni js default olarak var kabul eder.
 
+Event Handlers
+bir programda olabulecek olaylarin yakalanmasi ve olay gerceklestiginde
+ istenilen kodlarin calistirilmasi islemine event handling denir. Bu islemi yapan kodlara da event handler denir.
+event triggering: bir butona tiklanmasi hadisesi yani tetiklenmesi yada fareyle yaptigi herseydir
+event throwing: olayin firlatilmasi
+event listening: olan olayin yakalanmasi. kullaniciyi dinliyoruz ve listening ile bunu yakaliyoruz. dinleyen sistem kuruyoruz
+event handling:listening e karsi gelen kodlarin yazilmasi.
+
+Number(x) -> x ifadesini numeric tipe cevirir. fakat bosluklari sifir olarak kabul eder.
+parseFloat(x) -> x ifadesini decimal(ondalikli) tipe cevirir.Bosluklar NaN kabul edilir.
+parsInt(x) -> x ifadesini integer(tam sayinin) tipe cevirir. Bosluklar NaN kabul edilir.
+ 
