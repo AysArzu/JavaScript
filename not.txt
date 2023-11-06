@@ -134,3 +134,25 @@ Number(x) -> x ifadesini numeric tipe cevirir. fakat bosluklari sifir olarak kab
 parseFloat(x) -> x ifadesini decimal(ondalikli) tipe cevirir.Bosluklar NaN kabul edilir.
 parsInt(x) -> x ifadesini integer(tam sayinin) tipe cevirir. Bosluklar NaN kabul edilir.
  
+ Array Methods
+ Dizi elemanlarina ulasmak, bunlari manipule etmek veya iterasyon yapmak icin cesitli hazir methodlar vardir.
+
+ i)mutator Methods: Dizi icerigini degistirilmesini saglar
+            push:dizinin sonuna bir veya daha fazla eleman ekler ve yeni eleman sayisini dondurur.
+            pop:dizin son elemanini diziden siler ve bu elemani dondurur
+            shift:dizin ilk elemanini diziden siler ve bu elemani dondur
+            unshift: dizinin ilk indeksine yeni bir eleman ekler ve dizinin yeni eleman sayisini dondurur.
+            sort:diziyi yukselen sirada siralar
+            reverse:dizinin elemanlarini tersten siralar.
+            splice: dizinin iceriklerini yeni ogeler ekleyerek mevcut ogeleri silerek gunceller.
+ ii)access methods: Dizi elemanlarina erismek icin kullanilir.
+ iii)iterator methods: Dizi elemanlarini dongu yoluyla dolasmak icin kullanilir
+
+ Access Methods
+ concat: Dizi ile bir baska diziyi veya degri birlestirerek yeni bir dizi dondurur.
+ includes:Dizinin belirtilen bir elemani icerip icermedigine bakar. Eger iceriyorsa true, icermiyorsa false dondurur.
+ indexOf:Belirtilen elemanin dizide ilk goruldugu indeks bumarasini dondurur.
+ lastIndexOf:Belirtilen elemanin dizide goruldugu en son indeks numarasini dondurur, bulamazsa -1 dondurur.
+ join:Bir dizi icerisinde yer alan butun elemanlari birlestirerek String bir ifade olarak geri dondurur.
+ toString:Dizinin icerisindeki elemanlari tek bir String olarak dondurur.
+ slice:Bir dizinin elemanlarini belirtilen baslangic ve bitis indeksine gore kopyasini olusturarak dondurur.
