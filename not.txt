@@ -149,6 +149,7 @@ parsInt(x) -> x ifadesini integer(tam sayinin) tipe cevirir. Bosluklar NaN kabul
  iii)iterator methods: Dizi elemanlarini dongu yoluyla dolasmak icin kullanilir
 
  Access Methods
+
  concat: Dizi ile bir baska diziyi veya degri birlestirerek yeni bir dizi dondurur.
  includes:Dizinin belirtilen bir elemani icerip icermedigine bakar. Eger iceriyorsa true, icermiyorsa false dondurur.
  indexOf:Belirtilen elemanin dizide ilk goruldugu indeks bumarasini dondurur.
@@ -156,3 +157,17 @@ parsInt(x) -> x ifadesini integer(tam sayinin) tipe cevirir. Bosluklar NaN kabul
  join:Bir dizi icerisinde yer alan butun elemanlari birlestirerek String bir ifade olarak geri dondurur.
  toString:Dizinin icerisindeki elemanlari tek bir String olarak dondurur.
  slice:Bir dizinin elemanlarini belirtilen baslangic ve bitis indeksine gore kopyasini olusturarak dondurur.
+
+iteration:
+for in: for dongusunu kisaltilmisidir. (sayac ve kosul kullanmaya gerek yok) dizi ve nesnelerin iterasyonu icin gelistirilmis
+degisken icine otomatik olarak elemanin indisi gelir.
+
+for of:for in e gore daha genis kullanim alani vardir.Dizi string gibi bircok veri yapisinda kullanilabilir.
+degisken icine otomatik olarak elemanin degeri gelir.
+
+for each:for of dongusune benzer. Sadece dizilerde calisir. For of'tan sonra populerligini yitirmeye baslamistir.
+map: Mevcut dizi icinde iterasyon yapip orjinal  dizinin kopyasi uzerinde elemanlarinin degerlerini degistirmeyi saglar. 
+     Degisiklik yapilmis diziyi geri verir. Map methodu orijinal dizii degistirmez.
+
+filter:Mevcut bir dizi icinde iterasyon yapip orjinal dizin kopyasi uzerinde filtreleme yapar.Filtrelenmis diziyi geri verir
+ Map methodu orijinal diziyi degistirmez.
