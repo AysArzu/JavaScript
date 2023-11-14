@@ -1,3 +1,4 @@
+//tum ulkeler degil
 export const countries =[
     {name:{
         common:"Aruba",

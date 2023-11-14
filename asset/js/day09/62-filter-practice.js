@@ -19,8 +19,16 @@ const getCountry = (id) => {
 
 
 document.querySelector("#ddlCountries").addEventListener("change", (e) => {
-console.log(e.target.value);
+console.log(e.target.value);//nesnenin ccn3 unu verir
+const country = getCountry(e.target.value);
+document.querySelector("#details tr:nth-child(1) td").innerHTML=country.capital;
+document.querySelector("#details tr:nth-child(2) td").innerHTML=Object.values(country.language).join("-");
+//birden fazla secenek varsa join("-") ile aralarina - isareti koyduk.
+document.querySelector("#details tr:nth-child(3) td").innerHTML=country.region;
+document.querySelector("#details tr:nth-child(4) td").innerHTML=Object.values(country.currency).map(item=>item.name);
 })
+
+
 
 
 loadCountries();

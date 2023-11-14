@@ -7,10 +7,13 @@
   </head>
   <body>
     <script>
-      const nums=[12,-45,12,56,-23,-89];
-//filter [-45,-23,-89]
-//map [45,23,89]
-      nums.filter(num=>num<0).map(num=>num*-1).forEach((num)=>console.log(num));
-      </script>
+      const nums = [12, -45, 12, 56, -23, -89];
+      //filter [-45,-23,-89]
+      //map [45,23,89]
+      nums
+        .filter((num) => num < 0)
+        .map((num) => num * -1)
+        .forEach((num) => console.log(num));
+    </script>
   </body>
 </html>

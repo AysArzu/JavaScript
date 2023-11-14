@@ -171,3 +171,32 @@ map: Mevcut dizi icinde iterasyon yapip orjinal  dizinin kopyasi uzerinde eleman
 
 filter:Mevcut bir dizi icinde iterasyon yapip orjinal dizin kopyasi uzerinde filtreleme yapar.Filtrelenmis diziyi geri verir
  Map methodu orijinal diziyi degistirmez.
+
+ reduce: Mevcut dizi icinde iterasyon yapip yapilan islemlere gore tek bir deger hesaplanmis deger dondurur
+
+ dizi.reduce((total , x)=> total + x, 0); total son deger, x dizi elemani, 0 ilk deger.
+
+ every: Mevcut dizi icinde elemanlarin istenilen kriteri saglayip saglamadigini dondurur.
+       Sagliyorsa true, saglamiyorsa false doner.(and operatoru gibi)
+       dizi.every((item)=>item>13); elementlerin hepsi true ise true doner bir tane false varsa false doner.
+
+       some:Mevcut dizi icinde en az bir elemanin istenilen kriteri saglayip saglamadigini dondurur.
+       Sagliyorsa true, saglamiyorsa false doner.(or operatoru gibi)
+        dizi.some((item)=>item>13); elementlerin sadece biri true ise true doner.
+
+
+        DOM(Document Object Model) dokumanlarinin stillerinin yapisinin iceriginin erisilmesine ve
+         guncellenmesine olanak saglayan bir nesne modelidir
+         Objects: HTML elemanlari
+         Properties: HTML elemanlarinin ozellikleri( attribute)
+         Methods: HTML elemanlarina erismeyi saglayan methodlar
+         Events: HTML elemanlari uzerinde gerceklesen olaylar
+
+         DOM'a erisim
+         getElementById: Bir elemani id sinden bulur
+         getElementsByTagName: Bir elemani Tag(Etiket) adina gore bulur.
+         getElementsByClassName:Bir elemani Class(sinif) adina gore bulur.
+         querySelector:Bir elemani id, class, ozellik, tur ve degere gore secmek icin kullanilir.
+                    Eslesen ilk elemani secer.
+        querySelectorAll:Bir elemani id, class, ozellik, Tur ve degere gore secmek icin kullanilir.
+                    Eslesen elemanlarin listesini dondurur.
