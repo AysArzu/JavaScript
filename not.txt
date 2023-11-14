@@ -180,23 +180,52 @@ filter:Mevcut bir dizi icinde iterasyon yapip orjinal dizin kopyasi uzerinde fil
        Sagliyorsa true, saglamiyorsa false doner.(and operatoru gibi)
        dizi.every((item)=>item>13); elementlerin hepsi true ise true doner bir tane false varsa false doner.
 
-       some:Mevcut dizi icinde en az bir elemanin istenilen kriteri saglayip saglamadigini dondurur.
-       Sagliyorsa true, saglamiyorsa false doner.(or operatoru gibi)
-        dizi.some((item)=>item>13); elementlerin sadece biri true ise true doner.
+ some:Mevcut dizi icinde en az bir elemanin istenilen kriteri saglayip saglamadigini dondurur.
+     Sagliyorsa true, saglamiyorsa false doner.(or operatoru gibi)
+      dizi.some((item)=>item>13); elementlerin sadece biri true ise true doner.
 
 
-        DOM(Document Object Model) dokumanlarinin stillerinin yapisinin iceriginin erisilmesine ve
-         guncellenmesine olanak saglayan bir nesne modelidir
-         Objects: HTML elemanlari
-         Properties: HTML elemanlarinin ozellikleri( attribute)
-         Methods: HTML elemanlarina erismeyi saglayan methodlar
-         Events: HTML elemanlari uzerinde gerceklesen olaylar
+ DOM(Document Object Model) dokumanlarinin stillerinin yapisinin iceriginin erisilmesine ve
+   guncellenmesine olanak saglayan bir nesne modelidir
+    bir web sayfasi yuklendiginde tarayici, ilgili HTML  sayfasinin DOM'unu olusturur.
+   Dom agac yapisi ise HTML dosyasi icerisinde bulunan tum nesnelerin hiyerarsik bir bicimde gosterimidir.
+   Objects: HTML elemanlari
+  Properties: HTML elemanlarinin ozellikleri( attribute)
+  Methods: HTML elemanlarina erismeyi saglayan methodlar
+  Events: HTML elemanlari uzerinde gerceklesen olaylar
 
-         DOM'a erisim
-         getElementById: Bir elemani id sinden bulur
-         getElementsByTagName: Bir elemani Tag(Etiket) adina gore bulur.
-         getElementsByClassName:Bir elemani Class(sinif) adina gore bulur.
-         querySelector:Bir elemani id, class, ozellik, tur ve degere gore secmek icin kullanilir.
+ DOM'a erisim
+    querySelector:Bir elemani id, class, ozellik, tur ve degere gore secmek icin kullanilir.
+    getElementById: Bir elemani id sinden bulur
+    getElementsByTagName: Bir elemani Tag(Etiket) adina gore bulur.
+    getElementsByClassName:Bir elemani Class(sinif) adina gore bulur.
                     Eslesen ilk elemani secer.
-        querySelectorAll:Bir elemani id, class, ozellik, Tur ve degere gore secmek icin kullanilir.
+   querySelectorAll:Bir elemani id, class, ozellik, Tur ve degere gore secmek icin kullanilir.
                     Eslesen elemanlarin listesini dondurur.
+   closest:En yakin elemani secer. yukari dogru (parent'a dogru) hareket eder.
+
+   children:Bir elementin cocuklarini secer.
+
+   firstElementChild,
+   lastElementChild: Bir elementin ilk cocugunu veya son cocugunu secer.
+
+   parentElement:Bir elemanin parent'ini secmek icin kullanilir.
+
+   nextElementSibling,
+   previousElementSibling:Bir elemanin onceki veya sonraki kardesini (ayni seviyede) secmek icin kullanilir.
+
+   DOM guncellenme;
+   innerText:Bir elemanin icindeki metni getirir veya icine metin yerlestirir.
+   innerHTML:Bir elemanin icindeki html'i getirir veya icine HTML yerlestirir.
+   textContent:innerText ile aynidir. Tek farki stil ozelliklerinden dolayi gizlenmis olan textleri de getirir.
+   classList:Bir elemanin class listesine erisim saglar.
+        add('class'):classList'e bir class ekler.
+        remove('class'):classList'teki bir classi siler.
+        toggle('class'):classList'te yoksa class'i ekler, varsa class'i siler.
+        contains('class'):classList'te var olan bir class'in olup olmadigini kontrol eder.
+        replace('class1', 'class2'):classList'teki class1'i siler, yerine class2'yi koyar.
+ attributelere erisme:
+ getAttribute('attribute'):Bir elemanin icine metin yerlestirir.
+ setAttribute('attribute','value'):Bir elemana attribute ekler/degistirir.
+ removeAttribute('attribute'):Bir elemanin attribute'unu siler
+ attributes:Bir elemanin tum attributelarini cekebiliriz.
