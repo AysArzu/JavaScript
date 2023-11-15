@@ -229,3 +229,9 @@ filter:Mevcut bir dizi icinde iterasyon yapip orjinal dizin kopyasi uzerinde fil
  setAttribute('attribute','value'):Bir elemana attribute ekler/degistirir.
  removeAttribute('attribute'):Bir elemanin attribute'unu siler
  attributes:Bir elemanin tum attributelarini cekebiliriz.
+ createElement('h1'):Yeni bir element olusturur. Document objesinin bir methodudur.
+ appendChild(element):Bir elemana baska bir eleman ekler
+ append(element,"metin"):Bir elemanin icinde en sona baska bir elemani veya text'i ekler.
+                         Tek seferde birden fazla ekleme yapabilir.
+  prepend(element,"metin"):Bir elemanin icinde en basa baska bir elemani veya text'i ekler.Tek seferde birden fazla ekleme yapabilir
+  remove():Bir elemani siler.
