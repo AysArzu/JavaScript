@@ -25,8 +25,10 @@
       newLi2.setAttribute("data-id", 23);
 
       //document.querySelector("#list").appendChild(newLi);
-      document.querySelector("#list").append(newLi);
-      document.querySelector("#list").prepend(newLi2);
+      document.querySelector("#list").append(newLi);//sona ekledik ayni isim olsa one yada arkaya sadece bir tane ekler
+      document.querySelector("#list").prepend(newLi2);//onune ekledik => en son bu oldugu icin sona ekler ve kalir
+
+     document.querySelector("#list li:nth-child(2)").remove();//Ali'yi sildi basa Ebubekir yazdik index degisti!!
     </script>
   </body>
 </html>
