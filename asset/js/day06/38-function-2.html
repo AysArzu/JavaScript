@@ -12,10 +12,9 @@
 
     <script>
       function onCalculateClick() {
-        const age= document.querySelector("#txtYear").value;
-        
-        document.querySelector("#result").innerHTML = getAge(age);
+        const age = document.querySelector("#txtYear").value;
 
+        document.querySelector("#result").innerHTML = getAge(age);
       }
       function getAge(year) {
         if (!year || isNaN(year)) return;
@@ -28,10 +27,10 @@
         return age;
       }
       console.log(getAge(1980));
-      console.log(getAge("Merhaba"));//undefined
+      console.log(getAge("Merhaba")); //undefined
       console.log(getAge(2100)); //undefined
-      console.log(getAge());//undefined
-      console.log(getAge(""));//undefined
+      console.log(getAge()); //undefined
+      console.log(getAge("")); //undefined
     </script>
   </body>
 </html>

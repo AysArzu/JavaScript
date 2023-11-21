@@ -40,3 +40,4 @@ row.addEventListener('click',(e)=>{
   e.target.closest('tr').classList.toggle('table-warning')
 })
 })
+//2.35 video

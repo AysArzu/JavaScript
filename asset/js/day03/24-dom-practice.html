@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    :root{
-      --colorDark :black;
-      --colorLight:white;
-    }
-    button{
-      background-color:var(--colorDark) ;
-      color:var(--colorLight)
-    }
-    body.dark{
-      background-color: black;
-      color:gray;
-    }
-    body.dark button{
-      background-color:var(--colorLight) ;
-      color:var(--colorDark)
-    }
-  </style>
-</head>
-<body class="dark">
-<button onclick="setMode()" id="btnMode">Dark</button>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Illo doloremque quos atque at nesciunt, sapiente laudantium voluptatem ipsum
-     praesentium quidem quia dolor, culpa dolores animi
-      ducimus neque fuga libero? Laboriosam.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --colorDark: black;
+        --colorLight: white;
+      }
+      button {
+        background-color: var(--colorDark);
+        color: var(--colorLight);
+      }
+      body.dark {
+        background-color: black;
+        color: gray;
+      }
+      body.dark button {
+        background-color: var(--colorLight);
+        color: var(--colorDark);
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button onclick="setMode()" id="btnMode">Dark</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque
+      quos atque at nesciunt, sapiente laudantium voluptatem ipsum praesentium
+      quidem quia dolor, culpa dolores animi ducimus neque fuga libero?
+      Laboriosam.
+    </p>
 
-<script>
-    let mode="Light";
-function setMode(){
-document.querySelector('#btnMode').innerHTML=mode;
-  if(mode=="Light"){
-    document.querySelector("body").classList.add("dark");
-    mode="Dark";
-  }else{
-    document.querySelector("body").classList.remove("dark");
-    mode="Light";
-  }
-
-}/// ders 4
-
-</script>
-</body>
+    <script>
+      let mode = "Light";
+      function setMode() {
+        document.querySelector("#btnMode").innerHTML = mode;
+        if (mode == "Light") {
+          document.querySelector("body").classList.add("dark");
+          mode = "Dark";
+        } else {
+          document.querySelector("body").classList.remove("dark");
+          mode = "Light";
+        }
+      } /// ders 4
+    </script>
+  </body>
 </html>

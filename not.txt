@@ -1,7 +1,10 @@
 Case sensitive dir
 satir sonuna genellikle ; konur
-identifierlar harf _ veya $ ile baslanabilir
-identifierlar camelcase ile yazilir
+identifier'lar harf _ veya $ ile baslanabilir.Rakam olabilir ama basinda rakam olmaz(sayi1 olur 1sayi olmaz)
+identifier'lar camelCase ile yazilir
+ingiliz alfabesinde olmaan karakterler kullanilmaz(ç,ö,ğ,ı,ş,ü)
+if, true, else vb. ifadeler degisken ismi olarak kullanilmaz.
+boşluk  ve ozel karakterler(?,%,!,.,+ vb) kullanilmaz. 
 
     console.log ta kullanici birsey gormez sadece console da biz goruruz
     console.log ("Hello world");
@@ -10,8 +13,8 @@ identifierlar camelcase ile yazilir
                    developerin dikkatini cekmek icin kullanilir kirmizi yazdirir
 
 alert=> kullaniciya bilgi vermek
-        confirm=>kullanicidan bilgi almak icin
-        prompt=> kulanicidan bilgi almak icin kullanilir
+confirm=>kullanicidan bilgi almak icin
+prompt=> kulanicidan bilgi almak icin kullanilir
 
 <script> icine yazacaksan eger bu sekilde olur
     // yorum satiri
@@ -25,19 +28,19 @@ alert=> kullaniciya bilgi vermek
 js de degisken veya sabit tanimlamak icin 3 farkli ifade kullanilir
 
    var  =>DEGISKEN   
-    let(ES6)=>DEGISKEN 
-    const(ES6) =>SABIT
+   let(ES6)=>DEGISKEN 
+   const(ES6) =>SABIT- Degistirilemeyen
 
 
 data veri tipleri
 String var ad = "ayse";
 number var yas = 18;
-BigInf var x = 100n; ES11
-Boolean var emekli = true;
+BigInt var x = 100n; ES11
+Boolean var retired = true;
 Symbol var id= Symbol(); ES6
 Undefined var isim;
 null var isim = null;
-Object array, object
+ sadece bu non-primitive Object => array, object
 
 
 typeof methodu degiskenin turunu ogrenmemize yardimci olan methoddur

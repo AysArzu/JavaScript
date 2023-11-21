@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      #product-list span{
+      #product-list span {
         font-weight: bold;
       }
     </style>
@@ -29,19 +29,17 @@
         //Listedeki tum elementleri secerek eleman sayisini aldik
         const list = document.querySelectorAll("#product-list li");
 
-        for(let i=1; i<=list.length ; i++) {
+        for (let i = 1; i <= list.length; i++) {
           //sifirinci element olmadigi icin i=0 yazamayiz hata verir.
-   const elPrice = document.querySelector(
-          `#product-list li:nth-child(${i}) span`
-        );
-        let price = Number(elPrice.innerHTML);
-        price = price + (price * rate) / 100;
-        console.log(price);
-        elPrice.innerHTML = price.toFixed(0);
-        //toFixed() icine ne kadar rakam yazarsan o kadar virgulden sonra sayi gorursun
-
+          const elPrice = document.querySelector(
+            `#product-list li:nth-child(${i}) span`
+          );
+          let price = Number(elPrice.innerHTML);
+          price = price + (price * rate) / 100;
+          console.log(price);
+          elPrice.innerHTML = price.toFixed(0);
+          //toFixed() icine ne kadar rakam yazarsan o kadar virgulden sonra sayi gorursun
         }
-     
       }
     </script>
   </body>
