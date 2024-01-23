@@ -244,12 +244,29 @@ filter:Mevcut bir dizi icinde iterasyon yapip orjinal dizin kopyasi uzerinde fil
   Error handling
   Hata olmasi muhtemel  kodlarda hataların programın akışını engellememesini sağlamak ve 
   kullanıcıya daha kontrollü ve anlaşılır uyarlar vermek amacı için yapılan işlemdir.
+  Genellikle kullanıcıdan bilgi alınırken veya API dan bilgi çekerken kullanılır.
   try{
     Hata olması beklenen kodlar buraya yazılır
   }catch(ex) {
       try bloğunda bir hata olduğunda program akışı catch bloğuna geçer 
       ve hata ile ilgili bilgi ex object içinde bulunur
   }finally{
-    Hata olsa da olmasa da çalıştırılan bir blocktur. Kullanılması zorunlu değildir.
+    Hata olsa da olmasa da çalıştırılan bir block'tur. Kullanılması zorunlu değildir.
   } 
-    
+  Debugging
+  Programdaki hataların ayıklanması işlemine debugging denir.
+  Debugging için chrome developer tools kullanılabileceği gibi VScode gibi programlardaki debugger da kullanılanilir.
+*Programın işleyişini belli bir noktada kesmek için breakpointler kullanılır.
+*Program  akışı o noktaya geldiğinde kesilecek ve programın adım adım çalıştırılabilmesi için debugging başlayacaktır.
+*Breakpoint eklemek için satır numaralarının sol tarafındaki boşluğa tıklanır. Kırmızı noktalar breakpointleri temsil eder.
+soldaki Run and Debug a basip create a launch.json file a basarsan web app (chrome) u secersen sana vscode adinda package acar.
+icine de launch.json file i acar. js uzantili filedan satir secerek debug yapmaya baslarsin.
+sayfanin uzerinde continue step over, step into, step out, restart, stop secenekleri var.
+
+TIMEOUT
+Gecikmeli olarak çalışması istenilen kodlar, timeout oluşturularak ve belli bir gecikme zamanı belirlenerek çalışırılabilir.
+setTimeout(()=>{
+//setTimeout methodu ile bir zamanlayici oluşturulur
+Gecikme zamanı ms cinsinden tanımlanır.
+}, 500);
+clearTimeout() methodu ile timer durdurulabilir.

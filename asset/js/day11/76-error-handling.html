@@ -16,11 +16,12 @@
     <div class="container mt-5">
       <form id="frmLogin" novalidate action="https://google.com">
         <div class="mb-3">
-          <label for="email" class="form-label">Email address</label><br />
+          <label for="email" class="form-label">Email address</label>
           <input
             type="email"
             class="form-control"
             id="email"
+            name="email"
             aria-describedby="emailHelp"
           />
           <div id="emailHelp" class="form-text">
@@ -28,8 +29,8 @@
           </div>
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Password</label><br />
-          <input type="password" class="form-control" id="password" />
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" class="form-control" id="password" />
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="class-check-input" id="exampleCheck1" />
