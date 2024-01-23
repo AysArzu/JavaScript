@@ -32,14 +32,14 @@ js de degisken veya sabit tanimlamak icin 3 farkli ifade kullanilir
    const(ES6) =>SABIT- Degistirilemeyen
 
 
-data veri tipleri
-String var ad = "ayse";
-number var yas = 18;
-BigInt var x = 100n; ES11
-Boolean var retired = true;
-Symbol var id= Symbol(); ES6
-Undefined var isim;
-null var isim = null;
+DATA VERI TIPLERI
+String =>    var ad = "ayse";
+number =>    var yas = 18;
+BigInt =>    var x = 100n; ES11
+Boolean =>   var retired = true;
+Symbol =>    var id= Symbol(); ES6
+Undefined => var isim;
+null =>      var isim = null;
  sadece bu non-primitive Object => array, object
 
 
@@ -59,8 +59,8 @@ console.log(typeof(degisken)); //String
 var degisken =50;  ====>>> bu satirda hata verir
 console.log(degisken); 
 console.log(typeof(degisken));
- 0,null, undefined , NaN ve " " Javascript tarafindan false olarak kabul edilir.
-diger degerler Boolean'a cevrildiginde true olarak kabul edilir.
+ ****0, null, undefined , NaN ve "" Javascript tarafindan false olarak kabul edilir.
+      diger degerler Boolean'a cevrildiginde true olarak kabul edilir.
 
 
 OPERATORLER
@@ -117,6 +117,8 @@ Programda tekrarli calistirilabilecek alt programlara denir.
 *problemler kucuk parcalara ayrilarak daha kolay cozulur.
 *parcalara ayrilan sorun daha fazla insan tarafindan ayni anda cozulur.
 *hata ayiklamak daha kolay olur.
+
+***icinde import olan bir js dosyasini html de kullanmak istiyorsak type="module" ile sorun cozulur.
 
 SCOPE
 Function scope: fonksiyonlarin icinde tanimlanan degiskenler sadece fonksiyon icinde gecerlidir.
@@ -238,3 +240,16 @@ filter:Mevcut bir dizi icinde iterasyon yapip orjinal dizin kopyasi uzerinde fil
                          Tek seferde birden fazla ekleme yapabilir.
   prepend(element,"metin"):Bir elemanin icinde en basa baska bir elemani veya text'i ekler.Tek seferde birden fazla ekleme yapabilir
   remove():Bir elemani siler.
+
+  Error handling
+  Hata olmasi muhtemel  kodlarda hataların programın akışını engellememesini sağlamak ve 
+  kullanıcıya daha kontrollü ve anlaşılır uyarlar vermek amacı için yapılan işlemdir.
+  try{
+    Hata olması beklenen kodlar buraya yazılır
+  }catch(ex) {
+      try bloğunda bir hata olduğunda program akışı catch bloğuna geçer 
+      ve hata ile ilgili bilgi ex object içinde bulunur
+  }finally{
+    Hata olsa da olmasa da çalıştırılan bir blocktur. Kullanılması zorunlu değildir.
+  } 
+    

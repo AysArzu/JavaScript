@@ -30,14 +30,19 @@ setStudentBg();
 
 document.querySelectorAll(".btn-delete").forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    const name = e.target.closest('tr').querySelector("td").innerText;
-    const result=confirm(`"Are you sure you want to delete ${name}`);
- console.log(result);
+    const row = e.target.closest("tr");
+    const name = row.querySelector("td").innerText;
+
+    const result = confirm(`"Are you sure you want to delete ${name}`
+    );
+
+    if (!result) return;
+    
+    row.remove();
   });
 });
-document.querySelectorAll('#tblStudents tbody tr').forEach((row)=>{
-row.addEventListener('click',(e)=>{
-  e.target.closest('tr').classList.toggle('table-warning')
-})
-})
-//2.35 video
+document.querySelectorAll("#tblStudents tbody tr").forEach((row) => {
+  row.addEventListener("click", (e) => {
+    e.target.closest("tr").classList.toggle("table-warning");
+  });
+});
